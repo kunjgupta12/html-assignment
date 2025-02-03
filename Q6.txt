@@ -1,0 +1,42 @@
+Q6)What are IDs and classes in HTML, and how do they differ?
+
+Both IDs and classes are used to assign styles and behaviors to HTML elements, but they serve different purposes.
+1. ID (#)
+
+    A unique identifier for a single HTML element.
+    Cannot be used for multiple elements on the same page.
+    Used for JavaScript manipulation and specific styling.
+    Declared using the id attribute in HTML.
+    Accessed in CSS using #id-name.
+
+Example:
+
+<p id="unique-paragraph">This is a unique paragraph.</p>
+
+
+
+Usage:
+
+When an element must have a unique identifier.
+Useful for JavaScript (document.getElementById("unique-paragraph")).
+
+
+2. Class (.)
+
+    A reusable style or behavior that can be applied to multiple elements.
+    Used for grouping elements with similar styling.
+    Declared using the class attribute in HTML.
+    Accessed in CSS using .class-name.
+
+Example:
+
+<p class="highlight">This is a highlighted paragraph.</p>
+<p class="highlight">This is another highlighted paragraph.</p>
+
+
+
+Usage:
+
+ When multiple elements share the same style.
+Useful for applying styles consistently.
+Can be used in JavaScript (document.getElementsByClassName("highlight")).

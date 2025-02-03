@@ -1,0 +1,72 @@
+Q2)Write the HTML code to create a table with 4 columns (ID, Employee Name, Designation, Department) and at least 6 rows.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Table</title>
+    <style>
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Employee Details</h2>
+    
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Employee Name</th>
+            <th>Designation</th>
+            <th>Department</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Alice Johnson</td>
+            <td>Software Engineer</td>
+            <td>IT</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Bob Smith</td>
+            <td>Project Manager</td>
+            <td>Management</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Charlie Davis</td>
+            <td>Data Analyst</td>
+            <td>Data Science</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>Diana Roberts</td>
+            <td>HR Manager</td>
+            <td>Human Resources</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>Edward Wilson</td>
+            <td>Marketing Specialist</td>
+            <td>Marketing</td>
+        </tr>
+        <tr>
+            <td>106</td>
+            <td>Fiona Green</td>
+            <td>Financial Analyst</td>
+            <td>Finance</td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+What is HTML, and how is an HTML document structured?
+
+
+HTML (HyperText Markup Language) is the standard language used to create and design web pages. It provides the basic structure of a webpage by using a system of elements and tags to define content such as text, images, links, and multimedia.
+
+
+Structure
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+</head>
+<body>
+    <h1>Welcome to My Webpage</h1>
+    <p>This is a simple HTML document.</p>
+    <a href="https://example.com">Click here</a>
+</body>
+</html>
+
+Explaination:
+
+<!DOCTYPE html> → Declares the document type as HTML5.
+<html> → The root element that encloses all content.
+<head> → Contains metadata (info about the page, not displayed).
+
+    <meta charset="UTF-8"> → Defines character encoding.
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> → Ensures responsive design.
+    <title> → Sets the title of the webpage (shown in the browser tab).
+
+<body> → Holds all the visible content of the webpage.
+
+        <h1> → A heading (largest).
+        <p> → A paragraph.
+        <a href="URL"> → A hyperlink.
+
