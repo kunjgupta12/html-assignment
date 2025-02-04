@@ -1,0 +1,6 @@
+Q2) Explain the difference between absolute and relative positions.
+
+Both absolute and relative positioning are part of CSS positioning.
+Property	Description
+relative	Positions the element relative to its normal position. Other elements are not affected.
+absolute	Positions the element relative to the nearest positioned ancestor (other than static). If no such ancestor exists, it positions relative to the <html> element. The element is removed from the document flow.

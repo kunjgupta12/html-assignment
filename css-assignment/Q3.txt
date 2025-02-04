@@ -1,0 +1,16 @@
+Q3) What are the different types of CSS Selectors?
+
+CSS provides various selectors to style elements:
+
+    Universal Selector (*) – Selects all elements.
+    Element Selector (div, p, h1 etc.) – Targets specific HTML elements.
+    Class Selector (.class) – Targets elements with a specific class.
+    ID Selector (#id) – Targets a specific element with a given ID.
+    Attribute Selector ([type="text"]) – Targets elements based on attributes.
+    Group Selector (h1, h2, p) – Targets multiple elements at once.
+    Child Selector (parent > child) – Selects direct children of an element.
+    Descendant Selector (ancestor descendant) – Selects all descendants of an element.
+    Adjacent Sibling Selector (element + element) – Selects the first adjacent sibling.
+    General Sibling Selector (element ~ element) – Selects all adjacent siblings.
+    Pseudo-classes (:hover, :nth-child(n), :first-child) – Target elements in specific states.
+    Pseudo-elements (::before, ::after) – Style parts of an element.

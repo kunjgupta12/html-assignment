@@ -1,0 +1,11 @@
+Q1) What is the use of the float property? Which property is the better alternative to it?
+
+    The float property in CSS is used to position elements to the left or 
+    right of a container, allowing text or inline elements to wrap around them.
+    It was widely used for layouts before Flexbox and CSS Grid became popular.
+
+Alternatives to float property:
+
+    Flexbox (display: flex;) – Better for aligning items in a row or column.
+    CSS Grid (display: grid;) – Ideal for complex layouts.
+    position: absolute or position: fixed – Sometimes used for specific layout requirements.

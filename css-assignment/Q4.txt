@@ -1,0 +1,34 @@
+Difference Between Inline and Block Elements in HTML
+
+
+1. Block Elements
+🔹 Block elements take up the full width available, stretching from left to right.  
+🔹 They always starton a new line and push the next element down.  
+🔹 You can set `width`, `height`, `margin`, and `padding` on them.  
+🔹 Block elements are typically used for structuring content.
+Examples of Block Elements:
+<div> – Generic container for block content  
+<p> – Paragraph  
+<h1> to <h6> – Headings  
+<section> – Defines sections in a page  
+<article>– Represents self-contained content  
+<header> <nav> – Structural elements
+
+
+2. Inline Elements
+🔹 Inline elements only take up as much width as necessary.  
+🔹 They do not start on a new line butstay within the same line.  
+🔹 You canno set `width` and `height` (but can apply `padding` and `margin` in limited ways).  
+🔹 Inline elements are used for styling small parts of text or inline content.
+
+Examples of Inline Elements:
+<span>– Generic inline container  
+<a> – Links  
+<strong> – Bold text  
+<em> – Italicized text  
+<img>– Inline image  
+<code>– Inline code formatting  
+
+Eample of an Inline Element:
+
+<p>This is a <span style="color: red;">highlighted</span> word in a sentence.</p>

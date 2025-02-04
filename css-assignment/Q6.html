@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Style for dialog box */
+        dialog {
+            padding: 20px;
+            width: 300px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .mad {
+            align-content: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+            padding: 10px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Links styling */
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        /* Dropdown menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: wheat;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+        }
+
+        /* Menu icon for mobile */
+        .menu-icon {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        /* Media queries for mobile view */
+        @media (max-width: 768px) {
+            .navbar {
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                background-color: wheat;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                padding: 10px;
+            }
+
+            .mad {
+                align-items: left;
+            }
+
+            .navbar a {
+                padding: 10px;
+                width: 100%;
+                text-align: left;
+            }
+
+            .dropdown-content {
+                display: block;
+                position: static;
+            }
+
+            .menu-icon {
+                display: block;
+                color: white;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+
+            .navbar.show {
+                display: flex;
+            }
+        }
+
+        select {
+            padding: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        footer {
+            background: #222;
+            color: #bbb;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            padding-bottom: 20px;
+        }
+
+        .footer-section {
+            width: 200px;
+            text-align: left;
+        }
+
+        .footer-section h3 {
+            color: white;
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+
+        .footer-section ul li a {
+            text-decoration: none;
+            color: #bbb;
+            font-size: 14px;
+        }
+
+        .footer-section ul li a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 15px;
+            font-size: 14px;
+        }
+
+        .footer-bottom a {
+            color: #bbb;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-bottom a:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center" class="mad" ;>
+        <img src="https://www.tothenew.com/cms-assets/s3fs-public/2021-08/ttnweb.svg" alt="Description of image"
+            style="width:15%; height: 100px " ,align:center />
+    </div>
+    <hr>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <div class="dropdown">
+            <a href="#">Single Posts</a>
+            <div class="dropdown-content">
+                <a href="#">Right Sidebar Post</a>
+                <a href="#">Fullwidth Post</a>
+                <a href="#">Left Sidebar Post</a>
+                <a href="#">Gallery Post</a>
+                <a href="#">Video Post</a>
+                <a href="#">Music Post</a>
+            </div>
+        </div>
+        <a href="#">Pages</a>
+        <a href="#">Category</a>
+        <a href="#">About</a>
+        <a href="#">Contact Me</a>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+    <script>function toggleMenu() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('show');
+        }
+    </script>
+    <img src="https://static.wingify.com/gcp/uploads/sites/3/2013/08/OG-image_How-to-Use-Image-Carousels-the-Right-Way.png"
+        alt="Description of image" style="width:100%; height: 300px;">
+    </section>
+
+    <section align="center" style="width: 90%; margin: auto;">
+        <div align="center" style="width: 70%; margin: auto;">
+            <p style="text-align: center; width: 70%; margin: auto; padding: 20px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla purus at leo dignissim
+                congue...
+            </p>
+        </div>
+
+        <form align="center" style="width: 50%; margin:auto; padding: 10px;">
+            <table align="center" width="100%">
+                <tr>
+                    <td colspan="2"><label for="name">NAME*:</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding-bottom: 10px;"><input type="text" id="name" name="name" required
+                            style="width: 100%; padding: 5px;"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><label for="email">EMAIL*:</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding-bottom: 10px;"><input type="email" id="email" name="email" required
+                            style="width: 100%; padding: 5px;"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><label for="password">PASSWORD*:</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding-bottom: 10px;"><input type="password" id="password" name="password"
+                            required style="width: 100%; padding: 5px;"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><label>GENDER*:</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding-bottom: 10px;">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><label for="city">CITY*:</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding-bottom: 10px;"><input type="text" id="city" name="city" required
+                            style="width: 100%; padding: 5px;"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><label>HOBBIES*:</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding-bottom: 10px;">
+                        <input type="radio" id="reading" name="hobby" value="reading" required>
+                        <label for="reading">Reading</label>
+                        <input type="radio" id="sports" name="hobby" value="sports" required>
+                        <label for="sports">Sports</label>
+                        <input type="radio" id="music" name="hobby" value="music" required>
+                        <label for="music">Music</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><label for="message">MESSAGE:</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding-bottom: 10px;"><textarea id="message" name="message" rows="6"
+                            style="width: 100%; padding: 5px;"></textarea></td>
+                </tr>
+            </table>
+
+            <button type="button" onclick="document.getElementById('dialog').showModal();">Submit</button>
+        </form>
+    </section>
+
+    <!-- Dialog box -->
+    <dialog id="dialog">
+        <p>Do you want to proceed with the submission?</p>
+        <button onclick="document.getElementById('dialog').close();">Cancel</button>
+        <button onclick="document.getElementById('dialog').close(); alert('Form Submitted!');">Proceed</button>
+    </dialog>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="#">Beauty of Nature</a></li>
+                    <li><a href="#">Fashion Model Shoot</a></li>
+                    <li><a href="#">Golden Snow Land</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Popular Posts</h3>
+                <ul>
+                    <li><a href="#">Top 10 Ingredients</a></li>
+                    <li><a href="#">Family Comes First</a></li>
+                    <li><a href="#">Golden Snow Land</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="#">Beauty of Nature</a></li>
+                    <li><a href="#">Fashion Model Shoot</a></li>
+                    <li><a href="#">Golden Snow Land</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Popular Posts</h3>
+                <ul>
+                    <li><a href="#">Top 10 Ingredients</a></li>
+                    <li><a href="#">Family Comes First</a></li>
+                    <li><a href="#">Golden Snow Land</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Your Website. All Rights Reserved.</p>
+            <p><a href="#">Home</a> | <a href="#">Lifestyle</a> | <a href="#">About</a> | <a href="#">Contact Me</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
