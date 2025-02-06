@@ -278,7 +278,7 @@
                 </tr>
 
                 <tr>
-                    <td colspan="2"><label>GENDER*:</label></td>
+                    <td colspan="2"><label>GENDER:</label></td>
                 </tr>
                 <tr>
                     <td colspan="2" style="padding-bottom: 10px;">
@@ -290,7 +290,7 @@
                 </tr>
 
                 <tr>
-                    <td colspan="2"><label for="city">CITY*:</label></td>
+                    <td colspan="2"><label for="city">CITY:</label></td>
                 </tr>
                 <tr>
                     <td colspan="2" style="padding-bottom: 10px;"><input type="text" id="city" name="city" required
@@ -298,7 +298,7 @@
                 </tr>
 
                 <tr>
-                    <td colspan="2"><label>HOBBIES*:</label></td>
+                    <td colspan="2"><label>HOBBIES:</label></td>
                 </tr>
                 <tr>
                     <td colspan="2" style="padding-bottom: 10px;">
@@ -320,7 +320,7 @@
                 </tr>
             </table>
 
-            <button type="button" onclick="document.getElementById('dialog').showModal();">Submit</button>
+            <button type="button" onclick="validateForm()">Submit</button>
         </form>
     </section>
 
@@ -328,8 +328,38 @@
     <dialog id="dialog">
         <p>Do you want to proceed with the submission?</p>
         <button onclick="document.getElementById('dialog').close();">Cancel</button>
-        <button onclick="document.getElementById('dialog').close(); alert('Form Submitted!');">Proceed</button>
+        <button onclick="submitForm()">Proceed</button>
     </dialog>
+    <script>        function validateForm() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (name === "" || email === "" || password === "") {
+                alert("All fields are required.");
+                return;
+            }
+
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return;
+            }
+
+            document.getElementById("dialog").showModal();
+        }
+
+        function submitForm() {
+            document.getElementById("dialog").close();
+            alert("Form Submitted Successfully!");
+            document.getElementById("contactForm").reset();
+        }
+    </script>
     <footer>
         <div class="footer-container">
             <div class="footer-section">
